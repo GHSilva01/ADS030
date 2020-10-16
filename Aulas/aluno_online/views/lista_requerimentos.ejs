@@ -63,12 +63,15 @@
           <div class="col-md-5">Disciplina</div>
           <div class="col-md-2">Prova</div>
           <div class="col-md-2">Situação</div>
+          <div class="col-md-2">Alterar</div>
         </div>
         <% requerimentos.forEach(function(requerimento, index) { %>
         <div class="row border-top pt-2 pb-2">
           <div class="col-md-5"><%= requerimento.disciplina %></div>
           <div class="col-md-2"><%= requerimento.prova %></div>
           <div class="col-md-2"><span class="badge <%= requerimento.estilo %>"><%= requerimento.situacao %></span></div>
+          <div class="btn btn-dark btn-sm float-right">Excluir</div>
+          <div class="btn btn-dark btn-sm float-right">Editar</div>
         </div>
         <% }) %>
       </div>
